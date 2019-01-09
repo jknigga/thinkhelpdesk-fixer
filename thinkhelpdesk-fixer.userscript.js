@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  trying to make ThinkHelpDesk a little better
-// @author       You
+// @author       Jakob Knigga
 // @match        https://www.thinkhelpdesk.com/tru-flex/admin/*
 // @require      https://code.jquery.com/jquery-2.2.4.min.js
 // @updateURL    https://raw.githubusercontent.com/jknigga/thinkhelpdesk-fixer/master/thinkhelpdesk-fixer.userscript.js
