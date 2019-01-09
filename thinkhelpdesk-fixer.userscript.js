@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ThinkHelpDesk Fixer
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  trying to make ThinkHelpDesk a little better
 // @author       Jakob Knigga
 // @match        https://www.thinkhelpdesk.com/tru-flex/admin/*
@@ -15,5 +15,10 @@
         'use strict';
         // this will make it so the page doesn't refresh and be dumb
         setInterval((function(){timerID=-1}),1000);
+        
+        $(document).ready(function(){
+            // removes the bottom confidential notice bar
+            $('.ConfidentialNotice').remove();
+        });
     });
 })(window.jQuery.noConflict(true));
