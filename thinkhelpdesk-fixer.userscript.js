@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ThinkHelpDesk Fixer
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  trying to make ThinkHelpDesk a little better
 // @author       Jakob Knigga
 // @match        https://www.thinkhelpdesk.com/tru-flex/admin/*
@@ -19,6 +19,9 @@
         $(document).ready(function(){
             // removes the bottom confidential notice bar
             $('.ConfidentialNotice').remove();
+            
+            // gets rid of the period
+            $('.header').prev('p').hide();
         });
     });
 })(window.jQuery.noConflict(true));
